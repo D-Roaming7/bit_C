@@ -2553,39 +2553,43 @@ using namespace std;
 //第一行包含了3个实数，分别表示3门课程的总平均成绩，保留2位小数，每个数之后输出一个空格。
 //第二行输出个人平均分最高的学生的数据，与输入数据格式相同。如果有多位个人平均分最高的学生，输出按照输入顺序第一个最高分的学生数据。
 //请注意行尾输出换行。
-int main()
-{
-	typedef struct {
-		int num;
-		char name[10];
-		int arr[3];
-	}S;
-	S a[10];
-	for (int i = 0; i < 10; i++)
-	{
-		scanf("%d", &a[i].num);
-		scanf("%s", a[i].name);
-		getchar();
-		scanf("%d %d %d", &a[i].arr[0], &a[i].arr[1], &a[i].arr[2]);
+//int main()
+//{
+//	typedef struct {
+//		int num;
+//		char name[10];
+//		int arr[3];
+//	}S;
+//	S a[10];
+//	for (int i = 0; i < 10; i++)
+//	{
+//		scanf("%d", &a[i].num);
+//		scanf("%s", a[i].name);
+//		getchar();
+//		scanf("%d %d %d", &a[i].arr[0], &a[i].arr[1], &a[i].arr[2]);
+//
+//	}
+//	int sum1 = 0, sum2 = 0, sum3 = 0;
+//	int sum[10];
+//	for (int i = 0; i < 10; i++)
+//	{
+//		sum1 += a[i].arr[0];
+//		sum2 += a[i].arr[1];
+//		sum3 += a[i].arr[2];
+//		sum[i] = a[i].arr[0] + a[i].arr[1] + a[i].arr[2];
+//	}
+//	int j = 0;
+//	for (int i = 0; i < 10; i++)
+//	{
+//		if (sum[j] < sum[i])
+//			j = i;
+//	}
+//	printf("%.2f %.2f %.2f\n", sum1 / 10.0, sum2 / 10.0, sum3 / 10.0);
+//	printf("%d ", a[j].num);
+//	printf("%s ", a[j].name);
+//	printf("%d %d %d\n", a[j].arr[0], a[j].arr[1], a[j].arr[2]);
+//}
 
-	}
-	int sum1 = 0, sum2 = 0, sum3 = 0;
-	int sum[10];
-	for (int i = 0; i < 10; i++)
-	{
-		sum1 += a[i].arr[0];
-		sum2 += a[i].arr[1];
-		sum3 += a[i].arr[2];
-		sum[i] = a[i].arr[0] + a[i].arr[1] + a[i].arr[2];
-	}
-	int j = 0;
-	for (int i = 0; i < 10; i++)
-	{
-		if (sum[j] < sum[i])
-			j = i;
-	}
-	printf("%.2f %.2f %.2f\n", sum1 / 10.0, sum2 / 10.0, sum3 / 10.0);
-	printf("%d ", a[j].num);
-	printf("%s ", a[j].name);
-	printf("%d %d %d\n", a[j].arr[0], a[j].arr[1], a[j].arr[2]);
-}
+//git出现问题了服了
+//打几个水字再push一遍
+
